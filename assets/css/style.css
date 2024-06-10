@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+}
+body{
+    background: #14171e;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 220px;
+    margin: 100px auto;
+    color: white;
+}
+.logo{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0 auto 50px auto;
+}
+form .form_field {
+    display: flex;
+    flex-direction: column;
+}
+form .form_field span{
+    position: relative;
+    top: -35px;
+    transition: 0.3s;
+}
+form .form_field input{
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    margin-bottom: 10px;
+    background: none;
+    color: white;
+    padding-bottom: 5px;
+}
+/* form .form_field input:eyy */
+::-ms-reveal { color: white; }
+.labelShow~span{
+    top:-50px !important;
+}
+
+button{
+    background: #395293;
+    height: 40px;
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    color: white;
+}
+
+.form_block{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    font-size: 13px;
+}
+.form_block label{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.settings{
+    width: 17px;
+    height: 17px;
+    cursor: pointer;
+}
+.forgot{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    margin-top: 10px;
+    text-align: center;
+    color: #76767c;
+}
+
+::-ms-reveal {
+    filter: invert(100%) !important;
+}
+
+#logged {
+    position: relative;
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+}
+
+#logged input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 17px;
+    width: 17px;
+    background-color: white;
+    border-radius: 4px;
+}
+
+#logged input:checked + .checkmark {
+    background-color: #395293;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#logged input:checked + .checkmark:after {
+    display: block;
+}
+
+#logged .checkmark:after {
+    left: 6px;
+    position: relative;
+    top: 3px;
+    width: 3px;
+    height: 8px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.checkbox_wrap{
+    display: flex;
+    gap: 10px;
+}
+
+.image_logo{
+    width: 100px;
+    height: 50px;
+    object-fit: contain;
+}
+.text_logo{
+    width: 100%;
+    height: 40px;
+    object-fit: contain;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
